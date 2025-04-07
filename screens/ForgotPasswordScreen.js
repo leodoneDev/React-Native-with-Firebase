@@ -15,7 +15,7 @@ export const ForgotPasswordScreen = ({ navigation }) => {
 
     sendPasswordResetEmail(auth, email)
       .then(() => {
-        console.log("Success: Password Reset Email sent.");
+        console.log("Success: Password Reset Email.");
         navigation.navigate("Login");
       })
       .catch((error) => setErrorState(error.message));
